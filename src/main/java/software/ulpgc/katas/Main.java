@@ -1,20 +1,22 @@
 package software.ulpgc.katas;
 
+import java.time.LocalDate;
+
 public class Main {
     static void main() {
-        Rectangle rectangle = new Rectangle(20, 20);
-        Rectangle rectangle2 = new Rectangle(-40, 20);
+        Person person1 = new Person("Lucia", LocalDate.of(2005, 3, 2));
+        Person person2 = new Person("Lucia", LocalDate.of(2005, 3, 2));
 
-        if (rectangle.area() != 400) {
-            System.out.println("Rectangle area is not 400");
-            return;
-        }
-        if (rectangle2.area() != 800) {
-            System.out.println("Rectangle area is not 800");
+        if (person1.age() != 21) {
+            System.out.println("Person age is not 21");
             return;
         }
 
-        System.out.println(rectangle.area());
-        System.out.println(rectangle2.area());
+        if (person2.age() != -2) {
+            System.out.println("Person age is not -2");
+            return;
+        }
+
+        System.out.println("Tests success");
     }
 }
