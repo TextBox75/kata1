@@ -14,7 +14,6 @@ public class Main {
             return;
         }
 
-        System.out.println(rectangle.area());
-        System.out.println(rectangle2.area());
+        System.out.println("Tests success");
     }
 }
